@@ -17,5 +17,10 @@
 		"tailwindcss": "^3.4.1",
 		"vite": "^5.0.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"appwrite": "^13.0.1",
+		"clipboard-copy": "^4.0.1",
+		"userland": "^0.4.1"
+	}
 }
