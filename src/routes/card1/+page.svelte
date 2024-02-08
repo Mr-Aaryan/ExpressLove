@@ -30,6 +30,12 @@
 
 </script>
 
+<svelet:head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Handlee&family=Loved+by+the+King&display=swap" rel="stylesheet">
+</svelet:head>
+
 <main class="h-screen w-screen">
     <div id='stars'>❤️</div>
     <div id='stars2'>❤️</div>
