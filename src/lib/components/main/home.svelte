@@ -6,20 +6,11 @@
     //click dispatcher
     const dispatch = createEventDispatcher();
 
-    function handleClick(){
-        dispatch('click');
+    function handleYesClick(){
+        dispatch('yesClick');
     }
-
-    let box, alertBox;    
-
-    //alert
-    function myAlert(){
-        box.classList.add("blur-md");
-        alertBox.classList.remove("hidden");
-    }
-    function alertRem(){
-        box.classList.remove("blur-md");
-        alertBox.classList.add("hidden");
+    function handleNoClick(){
+        dispatch('noClick');
     }
 </script>
 <div class="md:p-5 h-screen">
@@ -39,28 +30,13 @@
         <div class="w-10/12 mx-auto">
             <h2 class="ask font-bold w-fit bg-white px-5 py-2 mx-auto my-5 text-[#E30346] rounded-3xl text-2xl">Will you be my Valentine?</h2>
             <div class="flex justify-between">
-                <button class="ask border-2 px-6 py-3 bg-[#E30346] text-xl text-white rounded-full hover:cursor-pointer" on:click={handleClick}>Yes</button>
-                <button class="ask border-2 px-6 py-3 bg-[#E30346] text-xl text-white rounded-full hover:cursor-pointer" on:click={myAlert}>No</button>
+                <button class="ask border-2 px-6 py-3 bg-[#E30346] text-xl text-white rounded-full hover:cursor-pointer" on:click={handleYesClick}>Yes</button>
+                <button class="ask border-2 px-6 py-3 bg-[#E30346] text-xl text-white rounded-full hover:cursor-pointer" on:click={handleNoClick}>No</button>
             </div>
         </div>
     </div>
 </div>
-    <div class="hidden absolute bg-[#504b4b] text-2xl text-white w-[32rem] top-1/3 left-52 border shadow-md shadow-black" bind:this={alertBox}>
-        <div class="w-fit mx-auto my-2">
-            <div>Sorry this option is not available.</div>
-            <div>Please try again !!</div>
-        </div>
-        <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <!-- svelte-ignore a11y-no-static-element-interactions -->
-        <div class="w-fit mx-auto my-6 bg-[#2b2929] py-3 px-5 border cursor-pointer" on:click={alertRem} >
-            <button>OK</button>
-        </div>
-    </div>
-<!-- <style>
-    .hi{
-        color: #ff00003d;
-    }
-</style> -->
+
 
 <style>
 .heading {
