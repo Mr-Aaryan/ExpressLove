@@ -15,7 +15,7 @@
     export let receiver_name;
     export let message;
 </script>
-<div class="md:p-5 h-screen">
+<div class="md:p-5 overflow-auto h-screen">
     <div class="max-w-[36rem] mx-auto mt-16 bg-[#f3616d3b] mix-blend-lighten rounded-lg p-5">
         <div class="flex justify-center">
             <h2 class="heading text-[#E30346] text-2xl font-bold bg-white w-fit px-5 py-1 rounded-3xl  my-5">
@@ -24,7 +24,7 @@
                 <span>💕</span>
             </h2>
         </div>
-        <div class="mt-10">
+        <div >
             <p class="msg mx-3 my-10 bg-[#E30346] text-white text-xl text-justify rounded-3xl flex justify-center px-8 py-5">
                 Dear {receiver_name},<br>
                 {message}

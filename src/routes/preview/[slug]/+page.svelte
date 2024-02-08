@@ -28,7 +28,7 @@
     />
   </svelet:head>
   
-  <main class="h-screen w-screen">
+  <main class="w-screen">
     <div id="stars">❤️</div>
     <div id="stars2">❤️</div>
     <div id="stars3">❤️</div>
