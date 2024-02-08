@@ -1,5 +1,4 @@
 <script>
-  import hearts from "$lib/images/hearts.png";
   import Home from "$lib/components/main/home.svelte";
   import Yes from "$lib/components/main/yes.svelte";
   import No from "$lib/components/main/no.svelte";

@@ -1,7 +1,6 @@
 
 <script>
     import {createEventDispatcher} from 'svelte';
-    import hearts from '$lib/images/hearts.png';
     
     //click dispatcher
     const dispatch = createEventDispatcher();
