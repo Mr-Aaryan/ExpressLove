@@ -11,6 +11,9 @@
     function handleNoClick(){
         dispatch('noClick');
     }
+
+    export let receiver_name;
+    export let message;
 </script>
 <div class="md:p-5 h-screen">
     <div class="max-w-[36rem] mx-auto mt-16 bg-[#f3616d3b] mix-blend-lighten rounded-lg p-5">
@@ -23,7 +26,8 @@
         </div>
         <div class="mt-10">
             <p class="msg mx-3 my-10 bg-[#E30346] text-white text-xl text-justify rounded-3xl flex justify-center px-8 py-5">
-                Dear [Valentine's Name], as the day of love approaches, I find myself filled with anticipation and excitement. There's something I've been wanting to share with you, something that has been on my mind and in my heart for quite some time now. Would you do me the honor of being my Valentine this year? Let's make memories together and celebrate the beauty of our connection.
+                Dear {receiver_name},<br>
+                {message}
             </p>
         </div>
         <div class="w-10/12 mx-auto">
