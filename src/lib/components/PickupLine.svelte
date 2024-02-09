@@ -11,6 +11,7 @@
         }
     }
 </script>
-<a class="p-3 border rounded" href="#pickupline" on:click={copyToClipboard}>
-    <p id="pickup"><slot /></p>
+<a class="p-3 border rounded" href="#pickupline">
+    <p id="pickup" class="pb-2"><slot /></p>
+    <button class="bg-sky-600 hover:bg-sky-500 px-2 py-1 rounded text-white float-right" on:click={copyToClipboard}>Copy</button>
 </a>

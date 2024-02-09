@@ -6,8 +6,7 @@
         <a href="/" class="text-2xl">{ config.siteTitle }</a>
         <div class="">
             <a href="/" class="ml-3 hover:text-sky-600">Home</a>
-            <a href="#pickup" class="ml-3 hover:text-sky-600">PickUp lines</a>
-            <a href="#cards" class="ml-3 hover:text-sky-600">Cards</a>
+            <a href="/pickup-lines" class="ml-3 hover:text-sky-600">Pickup lines</a>
         </div>
     </div>
 </header>
