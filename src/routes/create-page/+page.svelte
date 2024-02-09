@@ -13,7 +13,7 @@
         <form method="POST" action="?/create_page" use:enhance>
             <div>
                 <label for="receiver"></label>
-                <input id="receiver" type="text" name="receiver_name" placeholder="Valentine Name" class="border rounded px-4 py-3" required>
+                <input id="receiver" type="text" name="receiver_name" placeholder="Valentine's Name" class="border rounded px-4 py-3" required>
             </div>
             <div class="mt-5 max-w-xl">
                 <label for="message"></label>

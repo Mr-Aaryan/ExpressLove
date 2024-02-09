@@ -18,7 +18,7 @@
 
 <Box>
     <a href="/pickup-lines" class="text-center text-sky-600 hover:underline">
-        <h2 class="text-3xl font-bold">Pickup Lines</h2>
+        <h2 class="text-3xl font-bold ">Pickup Lines</h2>
     </a>
     <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
         {#if data.pickup_lines.total === 0}
