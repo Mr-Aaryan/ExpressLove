@@ -5,17 +5,11 @@
 
 
     import { enhance } from '$app/forms'
-
-
-    export let form;
 </script>
 
 <Navbar />
 <Box>
     <div class="">
-        {#if form?.success}
-        <p class="text-green-600 py-2">Page Created succesfully.</p>
-        {/if}
         <form method="POST" action="?/create_page" use:enhance>
             <div>
                 <label for="receiver"></label>

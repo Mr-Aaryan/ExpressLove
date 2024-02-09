@@ -1,22 +1,10 @@
 
 <script>
-    import {createEventDispatcher} from 'svelte';
-    
-    //click dispatcher
-    const dispatch = createEventDispatcher();
-
-    function handleYesClick(){
-        dispatch('yesClick');
-    }
-    function handleNoClick(){
-        dispatch('noClick');
-    }
-
     export let receiver_name;
     export let message;
 </script>
 <div class="md:p-5 overflow-auto h-screen">
-    <div class="max-w-[36rem] mx-auto mt-16 bg-[#f3616d3b] mix-blend-lighten rounded-lg p-5">
+    <div class="max-w-[36rem] mx-auto md:mt-16 bg-[#f3616d3b] mix-blend-lighten rounded-lg p-5">
         <div class="flex justify-center">
             <h2 class="heading text-[#E30346] text-2xl font-bold bg-white w-fit px-5 py-1 rounded-3xl  my-5">
                 <span>💕</span>
@@ -33,8 +21,11 @@
         <div class="w-10/12 mx-auto">
             <h2 class="ask font-bold w-fit bg-white px-5 py-2 mx-auto my-5 text-[#E30346] rounded-3xl text-2xl">Will you be my Valentine?</h2>
             <div class="flex justify-between">
-                <button class="ask border-2 px-6 py-3 bg-[#E30346] text-xl text-white rounded-full hover:cursor-pointer" on:click={handleYesClick}>Yes</button>
-                <button class="ask border-2 px-6 py-3 bg-[#E30346] text-xl text-white rounded-full hover:cursor-pointer" on:click={handleNoClick}>No</button>
+                <form action="/?yes_mail" method="POST">
+                <input name="msg" value="message" hidden/>
+                <button class="ask border-2 px-6 py-3 bg-[#E30346] text-xl text-white rounded-full hover:cursor-pointer" type="submit" formaction="?/yes_mail">Yes</button>
+                </form>
+                <button class="ask border-2 px-6 py-3 bg-[#E30346] text-xl text-white rounded-full hover:cursor-pointer" formaction="?/no_mail">No</button>
             </div>
         </div>
     </div>

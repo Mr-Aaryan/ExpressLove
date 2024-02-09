@@ -9,7 +9,7 @@
             <img src="{noPlease}" alt="Yes, Please" class="mx-auto h-96 rounded ">
         </div>
         <div class="w-10/12 mx-auto mt-5 py-8">
-            <h1 class="text-4xl text-center text-white font-bold">It's Okay !!</h1>
+            <p class="text-white text-center">Thanks for being so up front. I’m disappointed of course, but I totally respect your decision.</p>
         </div>
     </div>
 </div>
