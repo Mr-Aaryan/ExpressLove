@@ -97,7 +97,7 @@ export const actions = {
         return redirect(308, '/acceptance/')
 	},
 
-    no_mail: async ({request}) => {
+    no_mail: async ({request, params}) => {
         if (request.method !== 'POST') {
             return { status: 405, body: 'Method Not Allowed' };
         }
