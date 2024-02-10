@@ -2,10 +2,19 @@
     import copy from 'clipboard-copy';
     export let textToCopy = 'Default text';
 
+    let btn_text = "Copy";
+    let btn;
+
     const copyToClipboard = async () => {
         try {
             await copy(textToCopy);
+            btn_text = "Copied";
             console.log('Text copied to clipboard!');
+
+            setTimeout(function(){
+                btn_text = "Copy"
+            }, 2000)
+
         } catch (err) {
             console.error('Failed to copy text to clipboard:', err);
         }
@@ -14,7 +23,7 @@
 <div class="p-3 border rounded">
     <p id="pickup" class="pb-2"><slot /></p>
     <!-- <button class="bg-sky-600 hover:bg-sky-500 px-2 py-1 rounded text-white float-right" on:click={copyToClipboard}>Copy</button> -->
-    <button class="button on:click={copyToClipboard}">Click Me</button>
+    <button class="button" on:click={copyToClipboard} bind:this={btn}>{btn_text}</button>
 </div>
 <style>
     .button {
