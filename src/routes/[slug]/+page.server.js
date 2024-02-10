@@ -28,7 +28,51 @@ export const actions = {
             from: GOOGLE_EMAIL,
             to: email,
             subject: "Proposal Accepted",
-            html: "Congratulations! "+ receiver_name +" said <b>YES</b>."
+            html: `<!DOCTYPE html>
+            <html>
+            <head>
+                <style>
+                    * {
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    }
+                    .title {
+                        width: fit-content;
+                        margin: 0 auto;
+                        color: #DC2626;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+                    .box {
+                        display: flex;
+                        align-items: center;
+                        margin: 20px auto;
+                        width: fit-content;
+                        border-radius: 5px;
+                        margin: 20 auto;
+                        padding: 10px;
+                        width: 80%;
+                        background-color: #DC2626;
+                    }
+                    .box .text {
+                        color: white;
+                        font-size: 25px;
+                        display: flex;
+                        text-align: center;
+                        line-height: 35px;
+                        letter-spacing: 1;
+                    }
+                </style>
+            </head>
+            <body>
+                <main>
+                    <h1 class="title">Express Love</h1>
+                    <div class="box">
+                        <div class="text">
+                            Congratulations, ${receiver_name} accepted your proposal.
+                        </div>
+                    </div>
+                </main>
+            </body>
+            </html>`
         };
 
         const sendEmail  = async (message) => {
@@ -61,7 +105,52 @@ export const actions = {
             from: GOOGLE_EMAIL,
             to: email,
             subject: "Proposal Rejected",
-            html: "Sorry! "+ receiver_name +" said <b>NO</b>."
+            // html: "Sorry! "+ receiver_name +" said <b>NO</b>."
+            html: `<!DOCTYPE html>
+            <html>
+            <head>
+                <style>
+                    * {
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    }
+                    .title {
+                        width: fit-content;
+                        margin: 0 auto;
+                        color: #DC2626;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+                    .box {
+                        display: flex;
+                        align-items: center;
+                        margin: 20px auto;
+                        width: fit-content;
+                        border-radius: 5px;
+                        margin: 20 auto;
+                        padding: 10px;
+                        width: 80%;
+                        background-color: #0284C7;
+                    }
+                    .box .text {
+                        color: white;
+                        font-size: 25px;
+                        display: flex;
+                        text-align: center;
+                        line-height: 35px;
+                        letter-spacing: 1;
+                    }
+                </style>
+            </head>
+            <body>
+                <main>
+                    <h1 class="title">Express Love</h1>
+                    <div class="box">
+                        <div class="text">
+                            Sorry, ${receiver_name} rejected your proposal.
+                        </div>
+                    </div>
+                </main>
+            </body>
+            </html>`
         };
 
         const sendEmail  = async (message) => {

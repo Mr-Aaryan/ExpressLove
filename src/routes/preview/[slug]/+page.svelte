@@ -25,7 +25,9 @@
       <p class="block mt-2">
           {data.page_info.message}
       </p>
+      {#if data.page_info.sender_name}
       <p class="block text-right mt-2">Yours, {data.page_info.sender_name}</p>
+      {/if}
 </div>
 <div class="w-10/12 mx-auto">
     <h2 class="ask font-bold w-fit bg-white px-5 py-2 mx-auto my-5 text-[#E30346] rounded-3xl text-2xl">Will you be my Valentine?</h2>
