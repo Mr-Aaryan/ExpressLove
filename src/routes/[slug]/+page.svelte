@@ -1,5 +1,6 @@
 <script>
     import Box from "$lib/design/box.svelte";
+    import Cbox from "$lib/components/box.svelte";
     import { enhance } from '$app/forms'
     export let data;
 </script>
@@ -13,6 +14,7 @@
   />
 </svelet:head>
 
+{#if data.page_info.seen}
 <div class="overflow-none">
   <Box>
     <div class="flex justify-center">
@@ -48,6 +50,13 @@
   </div>
   </Box>
 </div>
+{:else}
+<Cbox>
+  <h1 class="text-4xl font-semi-bold text-center">404</h1>
+  <h1 class="text-3xl text-center mt-2">Page Not Found</h1>
+  <p class="text-center mt-3">Go back to <a href="/" class="underline hover:text-sky-600">Home</a></p>
+</Cbox>
+{/if}
 
 
 <style>
