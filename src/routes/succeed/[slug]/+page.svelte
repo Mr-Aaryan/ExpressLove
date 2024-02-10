@@ -30,7 +30,7 @@
 <Navbar />
 <Box>
   <div class="max-w-xl mx-auto pt-10 pb-5 rounded">
-    <div class="border rounded px-3 py-2 max-w-[24rem] mx-auto text-center">
+    <div class="border rounded px-3 py-2 max-w-[24rem] mx-auto text-center overflow-x-scroll">
       {linkToCopy}
     </div>
     <div class="mt-5 w-56 mx-auto flex justify-between">
@@ -43,6 +43,7 @@
         >Preview</a
       >
     </div>
+    <p class="text-center mt-4 text-sm">Check Email frequently for reply.</p>
   </div>
 </Box>
 <Footer />

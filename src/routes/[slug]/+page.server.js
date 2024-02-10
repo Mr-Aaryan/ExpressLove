@@ -16,7 +16,7 @@ export async function load({ params }) {
 
 /** @type {import('./$types').Actions} */
 export const actions = {
-	yes_mail: async ({request}) => {
+	yes_mail: async ({request, params}) => {
         if (request.method !== 'POST') {
             return { status: 405, body: 'Method Not Allowed' };
         }
@@ -89,6 +89,10 @@ export const actions = {
         };
 
         await sendEmail(message);
+
+        databases.updateDocument(DATABASE_ID, MESSAGES_COLLECTION_ID, params.slug, {
+            'seen': false,
+        });
 
         return redirect(308, '/acceptance/')
 	},
@@ -167,6 +171,10 @@ export const actions = {
         };
 
         await sendEmail(message);
+
+        databases.updateDocument(DATABASE_ID, MESSAGES_COLLECTION_ID, params.slug, {
+            'seen': false,
+        });
 
         return redirect(308, '/rejection/')
 	},
