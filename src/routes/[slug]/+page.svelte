@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Handlee&family=Loved+by+the+King&display=swap"
     rel="stylesheet"
   />
+  <title>Proposal Page</title>
 </svelet:head>
 
 {#if data.page_info.seen}
