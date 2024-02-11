@@ -6,6 +6,11 @@
 
     export let data;
 </script>
+
+<svelte:head>
+    <title>Express Love</title>
+</svelte:head>
+
 <Navbar />
 
 <Box>
