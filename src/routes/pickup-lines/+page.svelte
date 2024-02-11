@@ -6,6 +6,11 @@
 
     export let data;
 </script>
+
+<svelte:head>
+    <title>Pickup Lines</title>
+</svelte:head>
+
 <Navbar />
 <Box>
     <h1 class="text-3xl font-bold text-sky-600 text-center">Pickup Lines</h1>
