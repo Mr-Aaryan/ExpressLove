@@ -16,7 +16,7 @@
 <Box>
     <div class="text-center">
         <h1 class="text-4xl font-bold leading-relaxed">Express Feelings <br> To <span class="text-red-600">Loved 🥰</span> Ones</h1>
-        <p class="mt-3">Let the loved ones know about your feeling. Create custom porpose page.</p>
+        <p class="mt-3">Let the loved ones know about your feeling. Create custom propose page.</p>
         <a href="/create-page" class="block w-24 mx-auto text-center mt-3 py-2 bg-sky-600 hover:bg-sky-500 text-white rounded">Create</a>
     </div>
 </Box>
