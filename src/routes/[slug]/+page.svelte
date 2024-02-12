@@ -53,8 +53,8 @@
 </div>
 {:else}
 <Cbox>
-  <h1 class="text-4xl font-semi-bold text-center">404</h1>
-  <h1 class="text-3xl text-center mt-2">Page Not Found</h1>
+  <!-- <h1 class="text-4xl font-semi-bold text-center">404</h1> -->
+  <h1 class="text-3xl text-center mt-2">Message already delivered</h1>
   <p class="text-center mt-3">Go back to <a href="/" class="underline hover:text-sky-600">Home</a></p>
 </Cbox>
 {/if}
