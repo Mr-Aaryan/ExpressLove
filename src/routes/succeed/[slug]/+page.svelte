@@ -7,7 +7,7 @@
 
   export let data;
 
-  let linkToCopy = "https://expresslove.xyz/" + data.link;
+  let linkToCopy = "https://expresslove.vercel.app/" + data.link;
 
   let btn_text = "Copy";
   let btn;
