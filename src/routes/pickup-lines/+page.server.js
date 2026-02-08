@@ -7,7 +7,10 @@ export async function load() {
         pickup_lines: await databases.listDocuments(
             DATABASE_ID,
             PICKUP_LINE_COLLECTION_ID,
-            [Query.orderDesc('$createdAt')]
+            [
+				Query.orderDesc('$createdAt'),
+				Query.limit(100)
+			]
         ),
 	};
 }
